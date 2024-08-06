@@ -664,11 +664,8 @@
     align-items: center;
     justify-content: center;
     background-color: var(--yellow);
-    background: linear-gradient(
-      90deg,
-      rgba(254, 62, 87, 1) 0%,
-      rgba(250, 91, 111, 1) 100%
-    );
+    background: var(--yellow);
+    color: #000;
     transition: 0.1s;
   }
   
