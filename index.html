@@ -86,7 +86,7 @@
         data-balloon-pos="right"
         ><i class="fa fa-linkedin social-i"></i
       ></a>
-      
+      <div class="mail-line"></div>
     </div>
     
     <!--Main Wrapper-->
@@ -98,7 +98,7 @@
           <h2 id="main-title">I am a &nbsp;<span class="title">Front End Developer</span></h2>
 
           <div class="btn-grp">
-            <div class="btn primary" onclick="window.open('./assets/resources/resume.pdf')">
+            <div class="btn primary" onclick="window.open('https://www.canva.com/design/DAGJ5exIlRU/s93CVY8qpMHMyisoMUSZnQ/view?utm_content=DAGJ5exIlRU&utm_campaign=designshare&utm_medium=link&utm_source=editor')">
               <p>Get Resume</p>
             </div>
             <div class="btn secondary" onclick="window.open('#contact','_self')">
@@ -158,20 +158,20 @@
 <section class="section-education" id="education">
   <h2>Education</h2>
   <div class="edubox">
-    <div class="education-card">
+    <div class="education-card" data-url="https://goit.global/ro/">
       <img src="/img/logo-goit.png" alt="GoIT" class="education-img">
       <div class="education-content">
           <p class="education-title">GoIT Romania (Full Stack Developer course)</p>
           <p class="education-info">IT courses</p>
-          <div class="education-hover-text">Additional information about GoIT course.</div>
+          <div class="education-hover-text">2023-2024 <br><br>Intensive Full Stack Development course covering front-end development with HTML, CSS, JavaScript, and React, as well as back-end development with Node.js and MongoDB. The course also included the use of Git and GitHub for version control and collaboration. Practical projects completed during the course helped consolidate these skills.</div>
       </div>
   </div>
-  <div class="education-card">
+  <div class="education-card" data-url="https://mec.tuiasi.ro/">
       <img src="/img/logo-asachi-university.png" class="education-img" alt="Technical University Gheorghe Asachi">
       <div class="education-content">
           <p class="education-title">Technical University Gheorghe Asachi Iasi</p>
           <p class="education-info">Technical university</p>
-          <div class="education-hover-text">Additional information about the university.</div>
+          <div class="education-hover-text">2020-2024<br><br>Bachelor's Degree in Mechanical Engineering (MITAIA).</div>
       </div>
   </div>
 </div>
@@ -187,8 +187,7 @@
     <section class="section portfolio" id="portfolio">
       <h2>Portfolio</h2>
       <h3>Here are some of my recent works</h3>
-
-      <ul class="project-tabs">
+<!--<ul class="project-tabs">
         <li
           class="project-tab active-project"
           id="all-project-tab"
@@ -210,37 +209,76 @@
         >
           Group
         </li>
-      </ul>
+      </ul>-->
+      
 
       <div class="works">
         <div class="all-works project-content">
+
           <div class="project-card">
-            <img src="./assets/images/projects/polygram.webp" alt="Polygram" class="project-img" />
+
+            <img src="./img/phonebook.png" alt="phonebook" class="project-img" />
             <div class="card-content">
-              <h4>Polygram</h4>
+              <h4>Phonebook</h4>
               <h5><i class="website-i"></i>Web App</h5>
               <p>
-                A simple, convenient & way to seek, share & ask opinions, views & questions with
-                society for better decision making.
+                
+                An application where you can save and manage a list of contacts.
               </p>
               <p>
-                <br /><strong>Technologies Used :</strong>React, &nbsp;Express, &nbsp;Node.js,
-                &nbsp;MongoDB, &nbsp;SCSS etc.
+                <br /><strong>Technologies Used :</strong>React, &nbsp;JavaScript, &nbsp;HTML, &nbsp;CSS,
+                &nbsp;GitHub, &nbsp;API etc.
               </p>
 
               <div class="card-icons">
                 <div
                   class="card-icon"
                   rel="noopener"
-                  style="display: none"
-                  onclick="window.open('https://github.com/aromalanil/polygram-frontend');"
+                  
+                  onclick="window.open('https://github.com/Ichim99/goit-react-hw-08-phonebook');"
                 >
                   <i class="fa fa-github card-i"></i>
                 </div>
                 <div
                   class="card-icon demo"
                   rel="noopener"
-                  onclick="window.open('https://polygram.netlify.app');"
+                  onclick="window.open('https://ichim99.github.io/goit-react-hw-08-phonebook');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="project-card">
+
+            <img src="./img/Movie.png" alt="Movie" class="project-img" />
+            <div class="card-content">
+              <h4>Movie info</h4>
+              <h5><i class="website-i"></i>Web App</h5>
+              <p>
+                An application that uses an API to find the latest movies and information about them.
+              </p>
+              <p>
+                <br /><strong>Technologies Used :</strong>React, &nbsp;JavaScript, &nbsp;HTML, &nbsp;CSS,
+                &nbsp;GitHub, &nbsp;API etc.
+              </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+                  
+                  onclick="window.open('https://github.com/Ichim99/goit-react-hw-05-movies');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  onclick="window.open('https://ichim99.github.io/goit-react-hw-05-movies/');"
                 >
                   <i class="fa fa-link card-i"></i>
                 </div>
@@ -248,6 +286,148 @@
             </div>
           </div>
   
+
+
+
+          <div class="project-card">
+            <img src="./img/Essentials.png" alt="Essentials" class="project-img" />
+            <div class="card-content">
+              <h4>React Essentials</h4>
+              <h5><i class="website-i"></i>Web App</h5>
+              <p>
+                My first React application, where I created a page with information about React.
+              </p>
+              <p>
+                <br /><strong>Technologies Used :</strong>React, &nbsp;JavaScript, &nbsp;HTML,
+                &nbsp;CSS, &nbsp;GitHub etc.
+              </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+                  
+                  onclick="window.open('https://github.com/Ichim99/01-react-project');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  onclick="window.open('https://ichim99.github.io/01-react-project/');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="project-card">
+            <img src="./img/Event.png" alt="Event" class="project-img" />
+            <div class="card-content">
+              <h4>Event Boster</h4>
+              <h5><i class="website-i"></i>Web App</h5>
+              <p>
+                A group project where we developed an event search service.
+              </p>
+              <p>
+                <br /><strong>Technologies Used :</strong>JavaScript, &nbsp;HTML, &nbsp;CSS,
+                &nbsp;GitHub, &nbsp;API etc.
+              </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+              
+                  onclick="window.open('https://github.com/Ichim99/project-js-team1');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  onclick="window.open('https://ichim99.github.io/project-js-team1/');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="project-card">
+            <img src="./img/CatWiki.png" alt="CatWiki" class="project-img" />
+            <div class="card-content">
+              <h4>Cat Encyclopedia</h4>
+              <h5><i class="website-i"></i>Web App</h5>
+              <p>
+                A simple exercise using an API to display various cat breeds.
+              </p>
+              <p>
+                <br /><strong>Technologies Used :</strong>JavaScript, &nbsp;HTML, &nbsp;CSS,
+                &nbsp;GitHub, &nbsp;API etc.
+              </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+                  
+                  onclick="window.open('https://github.com/Ichim99/goit-js-hw-10');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  onclick="window.open('https://ichim99.github.io/goit-js-hw-10/');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="project-card">
+            <img src="./img//WebStudio.png" alt="WebStudio" class="project-img" />
+            <div class="card-content">
+              <h4>WebStudio</h4>
+              <h5><i class="website-i"></i>Web App</h5>
+              <p>
+                A website showcasing the company's solutions, team, and projects.
+              </p>
+              <p>
+                <br /><strong>Technologies Used :</strong>JavaScript, &nbsp;HTML, &nbsp;CSS,
+                &nbsp;GitHub etc.
+              </p>
+
+              <div class="card-icons">
+                <div
+                  class="card-icon"
+                  rel="noopener"
+                  
+                  onclick="window.open('https://github.com/Ichim99/goit-markup-hw-07');"
+                >
+                  <i class="fa fa-github card-i"></i>
+                </div>
+                <div
+                  class="card-icon demo"
+                  rel="noopener"
+                  onclick="window.open('https://ichim99.github.io/goit-markup-hw-07/');"
+                >
+                  <i class="fa fa-link card-i"></i>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
     

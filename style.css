@@ -389,6 +389,7 @@
 .skill-box:hover {
     background-color: #FFD700; /* Gold color */
     cursor: pointer;
+    color: #000;
 }
 
 
@@ -462,13 +463,13 @@
 }
 
 .education-info {
-  font-size: 1.2em;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .education-hover-text {
-  font-size: 1em;
-  color: #FFD700; /* Gold color */
+  font-size: 16px;
+  color: var(--dim-white); /* Gold color */
   margin-top: 10px;
   display: none;
 }
@@ -497,7 +498,7 @@
     min-height: 100vh;
     padding-left: 12%;
     padding-right: 12%;
-    background-color: var(--secondary-background);
+    background-color: rgba(0, 0, 0, 0);
   }
   
   .portfolio h2,
@@ -686,7 +687,8 @@
   /* Card UI Ends */
   
   #contact {
-    background-color: var(--primary-background);
+    background-color: var(--secondary-background);
+    height: 90vh;
   }
   
   .contact h3 {
@@ -725,10 +727,12 @@
   }
   
   .mail-id {
-    padding: 0 5.3rem;
+    padding: 0 10px;
+    min-width: 350px;
   }
   .phone {
-    padding: 0 11.1rem;
+    padding: 0 10px;
+    min-width: 350px;
   }
   
   .contact-icon {
@@ -812,9 +816,9 @@
   
   
   .footer {
-    padding: 3rem 15%;
-    padding-top: 4rem;
-    background-color: rgba(0, 0, 0, 0);
+  
+    
+    background-color: var(--secondary-background);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -822,13 +826,14 @@
     justify-content: space-around;
     position: relative;
     z-index: 0;
-    margin-top: 7rem;
+    height: 10vh;
+    
   }
   
   .footer hr {
     border: none;
     height: 0.1rem;
-    width: 100%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.171);
     margin-bottom: 1.5rem;
   }
@@ -1209,18 +1214,32 @@
     }
   
     .contact-container:hover {
-      background-color: var(--yellow);
-      border: 1.5px solid var(--yellow);
+      background-color: var(--yellow); /* Fundal galben la hover */
+      border: 1.5px solid var(--yellow); /* Bordură galbenă la hover */
+      color: #000; /* Text negru la hover */
     }
+    
+    /* Efect de hover pentru iconițe */
     .contact-container:hover .contact-icon {
-      border: 2px solid var(--white);
-      color: var(--yellow);
+      color: #000; /* Culoarea iconiței devine neagră la hover */
+    }
+    
+    /* Efect de hover pentru textul de contact */
+    .contact-container:hover .contact-data {
+      color: #000; /* Text negru la hover */
+      
+    }
+    
+    /* Dacă ai nevoie să schimbi și culoarea SVG-urilor (dacă folosești SVG-uri), folosește fill */
+    .contact-container:hover .contact-icon i {
+      fill: #000; /* Culoarea SVG-urilor neagră la hover */
     }
     .social-media-pack a:hover {
       background-color: var(--yellow);
+      
     }
     .social-media-pack a:hover .contact-social {
-      color: var(--primary-text);
+      fill: #000;
     }
   }
   

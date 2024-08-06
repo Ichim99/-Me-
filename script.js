@@ -46,16 +46,14 @@ $(document).ready(() => {
   setInterval(changeTitle, 3200);
 
 
-  $(document).ready(() => {
-    // Showing & Hiding Card Content on Click
+ 
+  $(document).ready(function() {
     $('.education-card').click(function() {
-      const thisCardContent = $(this).children('.education-content');
-      thisCardContent.toggleClass('view-card-details');
-      $('.education-content').not(thisCardContent).removeClass('view-card-details');
+      const url = $(this).data('url');
+      window.location.href = url;
     });
   });
   
-
  
 
   // Showing & Hiding Card Content on Click
